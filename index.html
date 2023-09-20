@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="pico.css">
+    <title class = "title">PORTFOLIO</title>
+  </head>
+  <body>
+
+    <!--Header Information and Github link-->
+    <div class = "hero" data-theme = "dark">
+      <nav class = "container-fluid">
+        <ul>
+          <li><strong>Portfolio</strong></li>
+        </ul>
+        <ul>
+          <li><a href="https://github.com/StefanoB1109" role="button">Github</a></li>
+        </ul>
+      </nav>
+      <header class = "container">
+        <hgroup>
+          <h1 class = "name">Stefano Bartolone IV</h1>
+          <h2 class = "field">Computer Science and Cyber Security</h2>
+        </hgroup>
+      </header>
+    </div>
+    <div id = "content"></div>
+    <main class="container"></main>
+
+    <!--Elevator Pitch-->
+    <div>
+      <h3 class = "elevator-pitch">Hello everyone!</h3>
+      <p class = "elevator-pitch">Welcome to my personal portfolio where I can demonstrate
+      my skills and certificates in computer science and cyber security. My website is simple
+      and easy to navigate. Feel free to look around and contact me if you have any questions.</p>
+    </div>
+
+    <!--Contact Information-->
+    <div>
+      <p style = "margin-left: 50px">
+        <b>Phone Number:</b>
+        <i style = "padding: 10px">714-356-6005</i>
+      </p>
+      <p style = "margin-left: 50px">
+        <b>Email:</b>
+        <i style = "padding: 10px">stefano@bartolone.com</i>
+      </p>
+    </div>
+  
+    <!--Tabs Information-->
+    <ul class = "tabs">
+      <li class = "tab" onclick = "showTab('About')">About</li>
+      <li class = "tab" onclick = "showTab('Skills')">Skills</li>
+      <li class = "tab" onclick = "showTab('Certifications')">Certifications</li>
+      <li class = "tab" onclick = "showTab('Projects')">Projects</li>
+    </ul>
+
+    <!--About Me Tab-->
+    <div id = "About-content" class = "tab-content">
+      <h2>About Me</h2>
+        <p>My name is Stefano Bartolone and I am a computer science major at California State University of Fullerton.
+          I am a computer science major, but I really do enjoy cybersecurity and studying different vunerabilities and how 
+          they affect a system. During my free time, I build computers and optimize them to have the best gaming experience 
+          possible. I am an aspiring Cyber Analyst and one day want to move into physical and network penetration testing.
+        </p>
+    </div>
+
+    <!--Skills tab-->
+    <div id = "Skills-content" class = "tab-content">
+      <h2>Skills</h2>
+      <p>Known Languages:</p>
+      <ul class = "bullet-points">
+        <li>Python</li>
+        <li>C++</li>
+        <li>Java Script</li>
+        <li>Assembly x86, MIPS Assembly</li>
+        <li>HTML</li>
+      </ul>
+    </div>
+
+    <!--Certifications Tab-->
+    <div id = "Certifications-content" class = "tab-content">
+      <h2>Certifications</h2>
+      <p>Completed:</p>
+      <ul class = "bullet-points">
+        <li>Comptia A+</li>
+      </ul>
+      <p>In progess:</p>
+      <ul class = "bullet-points">
+        <li>Comptia Network+</li>
+        <li>Comptia Security+</li>
+      </ul>
+    </div>
+
+    <!--Projects Tab-->
+    <div id = "Projects-content" class = "tab-content">
+      <h2>Projects</h2>
+      <h4>Socket Programming Python</h4>
+      <p style = "margin-left: 50px">This project is a server client socket program written in python that creates a socket and allows
+        the client to connect to the server and send/recieve messages.</p>
+      <p><a href = "https://github.com/StefanoB1109/SocketProgramming.git" class = "bullet-points">View Project</a></p>
+    </div>
+
+    <!--Java Script Tab Interaction-->
+    <script>
+      function showTab(tabName) {
+          const tabs = ["About", "Skills", "Certifications", "Projects"];
+          tabs.forEach((tab) => {
+              document.getElementById(tab + "-content").style.display = "none";
+          });
+
+          document.getElementById(tabName + "-content").style.display = "block";
+      }
+    </script>
+
+  </body>
+</html>
