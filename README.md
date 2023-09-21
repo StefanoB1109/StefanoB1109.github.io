@@ -1,5 +1,5 @@
 # StefanoB1109.github.io
-<br>Name: Stefano Bartolone IV<br>
-CWID: 888026721
-Languages: HTML, Java Script, CSS
+Name: Stefano Bartolone IV<br>
+CWID: 888026721<br>
+Languages: HTML, Java Script, CSS<br>
 Reference/Template: https://picocss.com/<br>
